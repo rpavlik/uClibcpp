@@ -109,7 +109,7 @@ CPU_CFLAGS=$(call qstrip,$(CPU_CFLAGS-y))
 GEN_CFLAGS:=-fno-builtin
 CFLAGS:=$(XWARNINGS) $(CPU_CFLAGS) -ansi
 
-LDFLAGS:=-Wl,--warn-common -Wl,--warn-once -Wl,-z,combreloc -Wl,-z,defs
+LDFLAGS:=-Wl,--warn-common -Wl,-z,combreloc -Wl,-z,defs
 
 ifeq ($(DODEBUG),y)
     CFLAGS += -O0 -g3 
